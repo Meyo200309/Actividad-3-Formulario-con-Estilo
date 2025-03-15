@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Registro</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Usuario</h1>
+        <nav>
+            <a href="#informacion-personal">Información Personal</a>
+            <a href="#informacion-contacto">Información de Contacto</a>
+            <a href="#informacion-cuenta">Información de Cuenta</a>
+            <a href="#preferencias">Preferencias</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="informacion-personal">
+            <h2>Información Personal</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required><br>
+
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required><br>
+
+                <label>Género:</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="genero" value="femenino" required>
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="otro" name="genero" value="otro" required>
+                <label for="otro">Otro</label><br>
+            </form>
+        </section>
+
+        <section id="informacion-contacto">
+            <h2>Información de Contacto</h2>
+            <form>
+                <label for="email">Dirección de Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br>
+
+                <label for="direccion">Dirección:</label>
+                <textarea id="direccion" name="direccion"></textarea><br>
+            </form>
+        </section>
+
+        <section id="informacion-cuenta">
+            <h2>Información de Cuenta</h2>
+            <form>
+                <label for="usuario">Nombre de Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required><br>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required><br>
+
+                <label for="confirmar-contrasena">Confirmación de Contraseña:</label>
+                <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required><br>
+            </form>
+        </section>
+
+        <section id="preferencias">
+            <h2>Preferencias</h2>
+            <form>
+                <label for="color-favorito">Seleccionar un Color Favorito:</label>
+                <select id="color-favorito" name="color-favorito">
+                    <option value="rojo">Rojo</option>
+                    <option value="azul">Azul</option>
+                    <option value="verde">Verde</option>
+                    <option value="amarillo">Amarillo</option>
+                    <option value="rosa">Rosa</option>
+                    <option values="morado">Morado</option>
+                    <opccion values="cafe">cafe</opccion>
+                    <option values="negro">negro</option>
+                </select><br>
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Aceptar Términos y Condiciones</label><br>
+
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
